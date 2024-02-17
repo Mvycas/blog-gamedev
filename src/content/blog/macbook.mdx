@@ -2,10 +2,13 @@
 title: 'MacBook'
 description: 'The new MacBook Pro 2022 is here. With the Apple M2 chip, a new design, and more, the new MacBook Pro is the best laptop Apple has ever made.'
 pubDate: 'Jul 02 2022'
-heroImage: '../../assets/images/book.jpg'
-category: 'Category 4'
-tags: ['PC']
+heroImage: '../../assets/images/ventura.jpeg'
+category: 'Category 1'
+tags: ['Rollaball', 'FirstPost']
 ---
+
+import { toggleIframe } from './toggleIframe.js';
+
 
 **If you know HTML, you already know enough to write your first Astro component.**
 
@@ -160,7 +163,7 @@ In Astro, you use the standard `kebab-case` format for all HTML attributes inste
 <div class="box" data-value="3" />
 ```
 
-<iframe src="https://mvycas.github.io/Homework-RollABall/"
+{/* <iframe src="https://mvycas.github.io/Homework-RollABall/"
         style="border: 0px solid black; justify-content: center;"
         name="Game name"
         scrolling="no"
@@ -169,7 +172,24 @@ In Astro, you use the standard `kebab-case` format for all HTML attributes inste
         marginwidth="0"
         height="500px"
         width="881px">
-</iframe>
+</iframe> */}
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div>
+        <iframe id="gameFrame" src="https://mvycas.github.io/Homework-RollABall/"
+                style="border: 0px solid black;"
+                name="Game name"
+                scrolling="no"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                height="320px"
+                width="480px">
+        </iframe>
+        <button id="toggleButton" onclick="toggleIframe()">Play Game</button>
+    </div>
+</div>
+
 
 #### Multiple Elements
 
