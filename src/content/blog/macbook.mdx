@@ -7,9 +7,6 @@ category: 'Category 1'
 tags: ['Rollaball', 'FirstPost']
 ---
 
-import { toggleIframe } from './toggleIframe.js';
-
-
 **If you know HTML, you already know enough to write your first Astro component.**
 
 Astro component syntax is a superset of HTML. The syntax was [designed to feel familiar to anyone with experience writing HTML or JSX](#differences-between-astro-and-jsx), and adds support for including components and JavaScript expressions.
@@ -163,7 +160,7 @@ In Astro, you use the standard `kebab-case` format for all HTML attributes inste
 <div class="box" data-value="3" />
 ```
 
-{/* <iframe src="https://mvycas.github.io/Homework-RollABall/"
+<iframe src="https://mvycas.github.io/Homework-RollABall/"
         style="border: 0px solid black; justify-content: center;"
         name="Game name"
         scrolling="no"
@@ -172,24 +169,7 @@ In Astro, you use the standard `kebab-case` format for all HTML attributes inste
         marginwidth="0"
         height="500px"
         width="881px">
-</iframe> */}
-
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <div>
-        <iframe id="gameFrame" src="https://mvycas.github.io/Homework-RollABall/"
-                style="border: 0px solid black;"
-                name="Game name"
-                scrolling="no"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                height="320px"
-                width="480px">
-        </iframe>
-        <button id="toggleButton" onclick="toggleIframe()">Play Game</button>
-    </div>
-</div>
-
+</iframe> 
 
 #### Multiple Elements
 
